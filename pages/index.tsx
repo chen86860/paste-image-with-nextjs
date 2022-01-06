@@ -19,7 +19,7 @@ const Home = () => {
       Array.from(files)
         .filter((item) => item.type.startsWith("image"))
         .map(async (item) => {
-          const stream = item.stream();
+          const stream: any = item.stream();
           const response = new Response(stream);
           const blob = await response.blob();
 
@@ -31,7 +31,7 @@ const Home = () => {
   };
 
   const handlePaste = async (event: ClipboardEvent) => {
-    if (!(document.activeElement === textarea.current && textarea.current.contains(event.target))) {
+    if (!(document.activeElement === textarea.current && textarea.current.contains(event.target as any))) {
       return;
     }
     const items: FileList = event.clipboardData.files;
