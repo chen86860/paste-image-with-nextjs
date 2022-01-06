@@ -1,0 +1,25 @@
+{
+  "name": "paste-image-with-nextjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/chen86860/paste-image-with-nextjs.git",
+  "author": "Jack <chen86860@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^12.0.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "sass": "^1.46.0",
+    "typescript": "^4.5.4"
+  }
+}
